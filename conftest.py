@@ -1,7 +1,5 @@
 import pytest
 from selenium import webdriver
-from data import Urls
-from pages.login_page import LoginPage
 
 
 @pytest.fixture(params=['firefox', 'chrome'])
@@ -13,8 +11,6 @@ def driver(request):
     elif request.param == 'chrome':
         browser = webdriver.Chrome()
 
-
     yield browser
 
     browser.quit()
-

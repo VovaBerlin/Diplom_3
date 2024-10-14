@@ -1,5 +1,4 @@
 import allure
-import pytest
 
 from data import Urls, Text
 from pages.login_page import LoginPage

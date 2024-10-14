@@ -1,18 +1,18 @@
 import allure
-from selenium.webdriver.common.by import By
 
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 
+from locators import MainPageLocators
+
 
 class BasePage:
-    WAIT_WINDOW = By.XPATH, "//*[@alt='loading animation']/parent::div"
 
     def __init__(self, driver):
         self.driver = driver
 
     def wait_loading(self):
-        WebDriverWait(self.driver, 10).until(expected_conditions.invisibility_of_element(self.WAIT_WINDOW))
+        WebDriverWait(self.driver, 10).until(expected_conditions.invisibility_of_element(MainPageLocators.WAIT_WINDOW))
 
     def wait_and_find_element(self, locator):
         self.wait_loading()

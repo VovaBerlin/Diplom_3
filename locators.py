@@ -26,6 +26,7 @@ class MainPageLocators:
     ORDER_BASKET = By.XPATH, "//section[contains(@class, 'BurgerConstructor_basket')]"
     CREATE_ORDER_BUTTON = By.XPATH, '//button[text()="Оформить заказ"]'
     ORDER_IDENTIFIER = (By.XPATH, '//p[text()="идентификатор заказа"]')
+    WAIT_WINDOW = By.XPATH, "//*[@alt='loading animation']/parent::div"
 
 
 class UserProfilLocators:

@@ -1,6 +1,6 @@
 import allure
 
-from data import Urls, User, Text
+from data import Urls, Text
 
 from pages.login_page import LoginPage
 from pages.main_page import MainPage

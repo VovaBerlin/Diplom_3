@@ -2,7 +2,7 @@ import allure
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
-from locators import LoginLocators, ForgotPasswordLocators
+from locators import ForgotPasswordLocators
 from pages.base_page import BasePage
 
 

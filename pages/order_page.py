@@ -3,7 +3,7 @@ import allure
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
-from locators import MainPageLocators, OrderPageLocators
+from locators import OrderPageLocators
 from pages.base_page import BasePage
 
 
